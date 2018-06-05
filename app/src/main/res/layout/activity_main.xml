@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <TextView
+        android:id="@+id/LOGO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HOLO"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="32sp"
+        android:layout_marginBottom="30dp"
+        android:layout_above="@+id/message"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:text="TO MAKE YOU \n NOT FEEL LONELY ANYMORE"
+        android:breakStrategy="balanced"
+        android:textAlignment="center"
+        android:id="@+id/message"
+        android:layout_above="@+id/linearLayout"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:text="로그인"
+        android:layout_marginBottom="1dp"
+        android:layout_above="@+id/join"
+        android:layout_alignStart="@+id/linearLayout" />
+
+    <Button
+        android:id="@+id/join"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:text="회원가입"
+        android:onClick="onJoinClicked"
+        android:layout_marginBottom="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/login" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:layout_above="@+id/login"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="이메일" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="비밀번호" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

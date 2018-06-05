@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDDED3">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="#FEF0EC"
+        android:hint="속마음을 술김에 말해보세요"
+        android:inputType="none"
+        android:lines="18"
+        android:textAlignment="center"
+        android:textColor="#CBBEB5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/voiceBtn"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="음성" />
+
+        <Button
+            android:id="@+id/pictureBtn"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="사진" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.20"
+            android:text="저장" />
+    </LinearLayout>
+
+</LinearLayout>
